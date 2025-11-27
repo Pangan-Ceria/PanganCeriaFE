@@ -1,371 +1,241 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pangan Ceria - Mengawal Pangan Aman</title>
+    <link rel="icon" type="image/png" href="../assets/logo-tab.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <title>Pangan Ceria - Mengawal Pangan Aman</title>
-  <link rel="icon" type="image/png" href="../assets/logo-tab.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="font-sans text-gray-800 antialiased flex flex-col min-h-screen bg-gray-50">
-  <header
-    class="w-full bg-[var(--bg-header)] flex justify-between items-center px-5 lg:px-16 py-5 shadow-sm relative z-50">
-    <div class="logo">
-      <div class="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center">
-        <img src="../assets/logo.png" alt="Pangan Ceria Logo"
-          class="h-full w-full object-contain hover:scale-110 transition-transform duration-300 cursor-pointer" />
+  <body class="font-sans text-gray-800 antialiased flex flex-col min-h-screen bg-gray-50">
+    <header class="w-full bg-[var(--bg-header)] flex justify-between items-center px-5 lg:px-16 py-5 shadow-sm relative z-50">
+      <div class="logo">
+        <div class="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center">
+          <img src="../assets/logo.png" alt="Pangan Ceria Logo" class="h-full w-full object-contain hover:scale-110 transition-transform duration-300 cursor-pointer" />
+        </div>
       </div>
-    </div>
-    <button
-      class="menu-toggle lg:hidden text-gray-800 text-2xl focus:outline-none hover:text-[var(--primary)] transition duration-300 transform active:scale-90">
-      <i class="fas fa-bars"></i>
-    </button>
-    <nav class="nav-menu">
-      <ul class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
-        <li>
-          <a href="../index.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Home
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./about.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            About us
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./dashboard.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Dashboard
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./edukasi.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Edukasi
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-full h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./audit.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Audit
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li class="lg:hidden w-full">
-          <a href="./laporan.html" class="block w-full">
-            <button class="bg-[var(--dark)] text-white font-bold w-full py-2.5 rounded-md text-sm shadow-lg">
-              Lapor
-            </button>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="hidden lg:block">
-      <a href="./laporan.html" class="inline-block">
-        <button
-          class="bg-[var(--dark)] text-white font-bold px-8 py-2.5 rounded-md text-sm shadow-lg transition-all duration-300 hover:bg-black hover:-translate-y-1 hover:shadow-2xl active:translate-y-0">
-          Lapor
-        </button>
-      </a>
-    </div>
-  </header>
-  <main>
-    <section
-      class="edukasi-hero relative w-full h-[400px] overflow-hidden flex items-center justify-center text-center px-4">
-      <div class="absolute inset-0 bg-black/65 z-0"></div>
-      <h1 class="relative z-10 text-white text-3xl md:text-5xl font-bold leading-tight drop-shadow-lg">
-        Edukasi Konsumsi<br /><span>dan Keamanan Pangan</span>
-      </h1>
-    </section>
-    <div class="max-w-7xl mx-auto px-5 lg:px-16 py-16 flex flex-col lg:flex-row gap-12">
-      <div class="w-full lg:w-3/4 space-y-16">
-        <section id="keamanan-pangan">
-          <div class="mb-8 text-center lg:text-left">
-            <h2 class="text-2xl md:text-3xl font-bold text-[var(--dark)] mb-2 inline-block relative">
-              Kunci Keamanan Pangan
-              <div class="h-1 w-1/2 bg-[var(--primary)] absolute bottom-0 left-0 rounded-full"></div>
-            </h2>
-            <p class="text-gray-600 mt-3 max-w-2xl">
-              Memilih bahan makanan adalah langkah awal krusial untuk mencegah kontaminasi dan
-              penyakit bawaan makanan.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div
-              class="edu-card card-produkSegar px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
-              <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">
-                Produk Segar
-              </h3>
-              <p class="edu-text text-gray-600 text-sm">
-                Pilih buah & sayur yang utuh, tidak memar, tidak berbau aneh, dan warnanya cerah
-                alami.
-              </p>
+      <button class="menu-toggle lg:hidden text-gray-800 text-2xl focus:outline-none hover:text-[var(--primary)] transition duration-300 transform active:scale-90">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-menu">
+        <ul class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
+          <li>
+            <a href="../index.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Home
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              About us
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./dashboard.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Dashboard
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./edukasi.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Edukasi
+              <span class="absolute left-1/2 bottom-[-4px] w-full h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./audit.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Audit
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li class="lg:hidden w-full">
+            <a href="./laporan.html" class="block w-full">
+              <button class="bg-[var(--dark)] text-white font-bold w-full py-2.5 rounded-md text-sm shadow-lg">Lapor</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hidden lg:block">
+        <a href="./laporan.html" class="inline-block">
+          <button class="bg-[var(--dark)] text-white font-bold px-8 py-2.5 rounded-md text-sm shadow-lg transition-all duration-300 hover:bg-black hover:-translate-y-1 hover:shadow-2xl active:translate-y-0">Lapor</button>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="edukasi-hero relative w-full h-[400px] overflow-hidden flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 bg-black/65 z-0"></div>
+        <h1 class="relative z-10 text-white text-3xl md:text-5xl font-bold leading-tight drop-shadow-lg">Edukasi Konsumsi<br /><span>dan Keamanan Pangan</span></h1>
+      </section>
+      <div class="max-w-7xl mx-auto px-5 lg:px-16 py-16 flex flex-col lg:flex-row gap-12">
+        <div class="w-full lg:w-3/4 space-y-16">
+          <section id="keamanan-pangan">
+            <div class="mb-8 text-center lg:text-left">
+              <h2 class="text-2xl md:text-3xl font-bold text-[var(--dark)] mb-2 inline-block relative">
+                Kunci Keamanan Pangan
+                <div class="h-1 w-1/2 bg-[var(--primary)] absolute bottom-0 left-0 rounded-full"></div>
+              </h2>
+              <p class="text-gray-600 mt-3 max-w-2xl">Memilih bahan makanan adalah langkah awal krusial untuk mencegah kontaminasi dan penyakit bawaan makanan.</p>
             </div>
-            <div
-              class="edu-card card-daging px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
-              <h3 class="edu-title text-xl font-bold text-[var(--accent)] mb-3 relative inline-block">
-                Daging, Unggas & Ikan
-              </h3>
-              <p class="edu-text text-gray-600 text-sm">
-                Pilih daging berwarna merah segar, tekstur kenyal, tidak bau amis menyengat, dan
-                mata ikan jernih.
-              </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="edu-card card-produkSegar px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
+                <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">Produk Segar</h3>
+                <p class="edu-text text-gray-600 text-sm">Pilih buah & sayur yang utuh, tidak memar, tidak berbau aneh, dan warnanya cerah alami.</p>
+              </div>
+              <div class="edu-card card-daging px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
+                <h3 class="edu-title text-xl font-bold text-[var(--accent)] mb-3 relative inline-block">Daging, Unggas & Ikan</h3>
+                <p class="edu-text text-gray-600 text-sm">Pilih daging berwarna merah segar, tekstur kenyal, tidak bau amis menyengat, dan mata ikan jernih.</p>
+              </div>
+              <div class="md:col-span-2">
+                <div class="edu-card card-produkKemasan mx-auto px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100 w-full">
+                  <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">Produk Kemasan</h3>
+                  <p class="edu-text text-gray-600 text-sm">Pastikan kemasan tidak robek, penyok, gembung, atau bocor. Kemasan rusak berpotensi besar telah terkontaminasi bakteri.</p>
+                </div>
+              </div>
+              <div class="edu-card card-kadaluawarsa px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
+                <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">Masa Kedaluwarsa</h3>
+                <p class="edu-text text-gray-600 text-sm">Selalu cek label <em>Expired Date</em>. Hindari membeli produk yang mendekati batas waktu, terutama produk susu.</p>
+              </div>
+              <div class="edu-card card-suhuPenyimpan px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
+                <h3 class="edu-title text-xl font-bold text-[var(--accent)] mb-3 relative inline-block">Suhu Penyimpanan</h3>
+                <p class="edu-text text-gray-600 text-sm">Produk dingin harus tetap terasa dingin saat disentuh. Ambil produk beku (frozen food) paling terakhir saat belanja.</p>
+              </div>
             </div>
-            <div class="md:col-span-2">
-              <div
-                class="edu-card card-produkKemasan mx-auto px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100 w-full">
-                <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">
-                  Produk Kemasan
-                </h3>
-                <p class="edu-text text-gray-600 text-sm">
-                  Pastikan kemasan tidak robek, penyok, gembung, atau bocor. Kemasan rusak
-                  berpotensi besar telah terkontaminasi bakteri.
+          </section>
+          <hr class="border-gray-200" />
+          <section id="penanganan-pangan">
+            <div class="mb-8 text-center lg:text-left">
+              <h2 class="text-2xl md:text-3xl font-bold text-[var(--dark)] mb-2 inline-block relative">
+                Prosedur Penanganan
+                <div class="h-1 w-1/2 bg-[var(--accent)] absolute bottom-0 left-0 rounded-full"></div>
+              </h2>
+              <p class="text-gray-600 mt-3 max-w-2xl">Empat kunci utama penanganan pangan untuk memutus rantai penyebaran bakteri di dapur.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="edu-card card-kebersihan px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
+                <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">Jaga Kebersihan</h3>
+                <p class="edu-text text-gray-600 text-sm">Cuci tangan dengan sabun 20 detik. Bersihkan peralatan, talenan, dan permukaan dapur sebelum dan sesudah masak.</p>
+              </div>
+              <div class="edu-card card-pisahkan px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
+                <h3 class="edu-title text-xl font-bold text-[var(--accent)] mb-3 relative inline-block">Pisahkan (Separation)</h3>
+                <p class="edu-text text-gray-600 text-sm">Gunakan talenan berbeda untuk bahan mentah dan matang. Simpan daging mentah di rak terbawah kulkas agar airnya tidak menetes.</p>
+              </div>
+              <div class="edu-card card-masak px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
+                <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">Masak dengan Tepat</h3>
+                <p class="edu-text text-gray-600 text-sm">Pastikan makanan mencapai suhu internal aman (min 70°C). Masak unggas hingga tidak ada bagian merah. Panaskan ulang sisa makanan hingga berasap.</p>
+              </div>
+              <div class="edu-card card-suhuAman px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
+                <h3 class="edu-title text-xl font-bold text-[var(--accent)] mb-3 relative inline-block">Jaga Suhu Aman</h3>
+                <p class="edu-text text-gray-600 text-sm">Hindari <em>Danger Zone</em> (5°C–60°C). Jangan biarkan makanan matang di suhu ruang > 2 jam. Cairkan makanan beku di kulkas (chiller), bukan direndam air hangat.</p>
+              </div>
+            </div>
+          </section>
+
+          <hr class="border-gray-200" />
+          <section id="analisis-risiko">
+            <div class="mb-8 text-center lg:text-left">
+              <h2 class="text-2xl md:text-3xl font-bold text-[var(--dark)] mb-2 inline-block relative">
+                Analisis Risiko Keracunan Pangan
+                <div class="h-1 w-1/2 bg-[var(--primary)] absolute bottom-0 left-0 rounded-full"></div>
+              </h2>
+              <p class="text-gray-600 mt-3 max-w-4xl">Tiga pilar utama kegagalan dalam program makanan skala besar yang rentan memicu insiden keracunan massal.</p>
+            </div>
+            <div class="space-y-6">
+              <div class="p-5 bg-white rounded-xl shadow-sm border border-l-4 border-[var(--dark)]">
+                <h3 class="text-xl font-bold text-[var(--dark)] mb-2 flex items-center gap-2"><i class="fas fa-truck-loading text-[var(--primary)]"></i> 1. Isu Distribusi & Rantai Pasok</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Waktu tunggu dan pengiriman yang lama sering membuat makanan matang masuk ke<strong>Zona Bahaya Suhu (5°C – 60°C)</strong> lebih dari 2 jam. Ketiadaanpendingin yang memadai selama transportasi adalah pemicu utama
+                  pertumbuhan cepatbakteri patogen.
+                </p>
+              </div>
+              <div class="p-5 bg-white rounded-xl shadow-sm border border-l-4 border-[var(--dark)]">
+                <h3 class="text-xl font-bold text-[var(--dark)] mb-2 flex items-center gap-2"><i class="fas fa-exclamation-triangle text-[var(--red-danger)]"></i> 2. Pengawasan & Titik Kontrol Kritis (CCP)</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Kurangnya pemantauan suhu pada titik kontrol kritis membuat makanan berada di luar suhu aman. Pengawasan dapur yang lemah juga menyebabkan pemanasan internal
+                  <strong>≥70°C</strong> dan penyimpanan panas/dingin tidak terpenuhi, melanggar <strong>Critical Control Points (CCP)</strong> dan meningkatkan risiko kontaminasi serta pertumbuhan bakteri.
+                </p>
+              </div>
+              <div class="p-5 bg-white rounded-xl shadow-sm border border-l-4 border-[var(--dark)]">
+                <h3 class="text-xl font-bold text-[var(--dark)] mb-2 flex items-center gap-2"><i class="fas fa-receipt text-[var(--accent)]"></i> 3. Kualitas Bahan Baku Awal</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Risiko bermula dari hulu: penggunaan bahan baku (daging/unggas/susu) yang sudah mendekati batas kedaluwarsa, atau berasal dari pemasok yang tidak tersertifikasi higiene. Kontaminasi awal ini sulit diperbaiki hanya dengan
+                  proses masak yang cepat.
                 </p>
               </div>
             </div>
-            <div
-              class="edu-card card-kadaluawarsa px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
-              <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">
-                Masa Kedaluwarsa
-              </h3>
-              <p class="edu-text text-gray-600 text-sm">
-                Selalu cek label <em>Expired Date</em>. Hindari membeli produk yang mendekati
-                batas waktu, terutama produk susu.
-              </p>
-            </div>
-            <div
-              class="edu-card card-suhuPenyimpan px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
-              <h3 class="edu-title text-xl font-bold text-[var(--accent)] mb-3 relative inline-block">
-                Suhu Penyimpanan
-              </h3>
-              <p class="edu-text text-gray-600 text-sm">
-                Produk dingin harus tetap terasa dingin saat disentuh. Ambil produk beku (frozen
-                food) paling terakhir saat belanja.
-              </p>
-            </div>
-          </div>
-        </section>
-        <hr class="border-gray-200" />
-        <section id="penanganan-pangan">
-          <div class="mb-8 text-center lg:text-left">
-            <h2 class="text-2xl md:text-3xl font-bold text-[var(--dark)] mb-2 inline-block relative">
-              Prosedur Penanganan
-              <div class="h-1 w-1/2 bg-[var(--accent)] absolute bottom-0 left-0 rounded-full"></div>
-            </h2>
-            <p class="text-gray-600 mt-3 max-w-2xl">
-              Empat kunci utama (4K) penanganan pangan untuk memutus rantai penyebaran bakteri di
-              dapur.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div
-              class="edu-card card-kebersihan px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
-              <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">
-                Jaga Kebersihan
-              </h3>
-              <p class="edu-text text-gray-600 text-sm">
-                Cuci tangan dengan sabun 20 detik. Bersihkan peralatan, talenan, dan permukaan
-                dapur sebelum dan sesudah masak.
-              </p>
-            </div>
-            <div
-              class="edu-card card-pisahkan px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
-              <h3 class="edu-title text-xl font-bold text-[var(--accent)] mb-3 relative inline-block">
-                Pisahkan (Separation)
-              </h3>
-              <p class="edu-text text-gray-600 text-sm">
-                Gunakan talenan berbeda untuk bahan mentah dan matang. Simpan daging mentah di rak
-                terbawah kulkas agar airnya tidak menetes.
-              </p>
-            </div>
-            <div
-              class="edu-card card-masak px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
-              <h3 class="edu-title text-xl font-bold text-[var(--primary)] mb-3 relative inline-block">
-                Masak dengan Tepat
-              </h3>
-              <p class="edu-text text-gray-600 text-sm">
-                Pastikan makanan mencapai suhu internal aman (min 70°C). Masak unggas hingga tidak
-                ada bagian merah. Panaskan ulang sisa makanan hingga berasap.
-              </p>
-            </div>
-            <div
-              class="edu-card card-suhuAman px-6 py-6 bg-white rounded-xl shadow-sm hover:shadow-lg border border-gray-100">
-              <h3 class="edu-title text-xl font-bold text-[var(--accent)] mb-3 relative inline-block">
-                Jaga Suhu Aman
-              </h3>
-              <p class="edu-text text-gray-600 text-sm">
-                Hindari <em>Danger Zone</em> (5°C–60°C). Jangan biarkan makanan matang di suhu
-                ruang > 2 jam. Cairkan makanan beku di kulkas (chiller), bukan direndam air
-                hangat.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <hr class="border-gray-200" />
-        <section id="analisis-risiko">
-          <div class="mb-8 text-center lg:text-left">
-            <h2 class="text-2xl md:text-3xl font-bold text-[var(--dark)] mb-2 inline-block relative">
-              Analisis Risiko Keracunan Pangan 
-              <div class="h-1 w-1/2 bg-[var(--primary)] absolute bottom-0 left-0 rounded-full"></div>
-            </h2>
-            <p class="text-gray-600 mt-3 max-w-4xl">
-              Tiga pilar utama kegagalan dalam program makanan skala besar yang rentan memicu
-              insiden keracunan massal.
-            </p>
-          </div>
-          <div class="space-y-6">
-            <div class="p-5 bg-white rounded-xl shadow-sm border border-l-4 border-[var(--dark)]">
-              <h3 class="text-xl font-bold text-[var(--dark)] mb-2 flex items-center gap-2">
-                <i class="fas fa-truck-loading text-[var(--primary)]"></i> 1. Isu Distribusi &
-                Rantai Pasok
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Waktu tunggu dan pengiriman yang lama sering membuat makanan matang masuk
-                ke<strong>Zona Bahaya Suhu (5°C – 60°C)</strong> lebih dari 2 jam.
-                Ketiadaanpendingin yang memadai selama transportasi adalah pemicu utama
-                pertumbuhan cepatbakteri patogen.
-              </p>
-            </div>
-            <div class="p-5 bg-white rounded-xl shadow-sm border border-l-4 border-[var(--dark)]">
-              <h3 class="text-xl font-bold text-[var(--dark)] mb-2 flex items-center gap-2">
-                <i class="fas fa-exclamation-triangle text-[var(--red-danger)]"></i> 2. Pengawasan
-                & Titik Kontrol Kritis (CCP)
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Kurangnya pemantauan suhu pada titik kontrol kritis membuat makanan berada di luar
-                suhu aman. Pengawasan dapur yang lemah juga menyebabkan pemanasan internal
-                <strong>≥70°C</strong> dan penyimpanan panas/dingin tidak terpenuhi, melanggar
-                <strong>Critical Control Points (CCP)</strong> dan meningkatkan risiko kontaminasi
-                serta pertumbuhan bakteri.
-              </p>
-            </div>
-            <div class="p-5 bg-white rounded-xl shadow-sm border border-l-4 border-[var(--dark)]">
-              <h3 class="text-xl font-bold text-[var(--dark)] mb-2 flex items-center gap-2">
-                <i class="fas fa-receipt text-[var(--accent)]"></i> 3. Kualitas Bahan Baku Awal
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Risiko bermula dari hulu: penggunaan bahan baku (daging/unggas/susu) yang sudah
-                mendekati batas kedaluwarsa, atau berasal dari pemasok yang tidak tersertifikasi
-                higiene. Kontaminasi awal ini sulit diperbaiki hanya dengan proses masak yang
-                cepat.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <aside class="w-full lg:w-1/4">
-        <div class="sticky top-24 space-y-8">
-          <div
-            class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 group transition-all duration-300 hover:shadow-xl">
-            <div class="h-48 overflow-hidden relative">
-              <img src="../assets/1.jpg" alt="Makan Bergizi Gratis"
-                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div
-                class="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">
-                HOT TOPIC
+          </section>
+        </div>
+        <aside class="w-full lg:w-1/4">
+          <div class="sticky top-24 space-y-8">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 group transition-all duration-300 hover:shadow-xl">
+              <div class="h-48 overflow-hidden relative">
+                <img src="../assets/1.jpg" alt="Makan Bergizi Gratis" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <div class="absolute top-3 left-3 bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm">HOT TOPIC</div>
+              </div>
+              <div class="p-5">
+                <div class="flex items-center space-x-2 mb-3 text-xs text-gray-400">
+                  <span><i class="far fa-calendar-alt mr-1"></i> Nov 2025</span>
+                  <span>•</span>
+                  <span>Pangan Ceria</span>
+                </div>
+                <h3 class="font-bold text-lg text-[var(--dark)] leading-snug mb-3 group-hover:text-[var(--primary)] transition-colors">Program Makan Bergizi Gratis: Tantangan Keamanan Pangan</h3>
+                <p class="text-sm text-gray-500 mb-4 line-clamp-3 leading-relaxed">
+                  Program makan siang gratis massal membutuhkan standar higiene ketat di dapur umum. Bagaimana memastikan distribusi ribuan porsi tetap bebas kontaminasi bakteri?
+                </p>
+                <a href="#" class="inline-flex items-center text-sm font-bold text-[var(--primary)] hover:text-[var(--accent)] transition-colors">
+                  Baca Selengkapnya
+                  <i class="fas fa-arrow-right ml-2 text-xs transition-transform group-hover:translate-x-1"></i>
+                </a>
               </div>
             </div>
-            <div class="p-5">
-              <div class="flex items-center space-x-2 mb-3 text-xs text-gray-400">
-                <span><i class="far fa-calendar-alt mr-1"></i> Nov 2025</span>
-                <span>•</span>
-                <span>Pangan Ceria</span>
-              </div>
-              <h3
-                class="font-bold text-lg text-[var(--dark)] leading-snug mb-3 group-hover:text-[var(--primary)] transition-colors">
-                Program Makan Bergizi Gratis: Tantangan Keamanan Pangan
-              </h3>
-              <p class="text-sm text-gray-500 mb-4 line-clamp-3 leading-relaxed">
-                Program makan siang gratis massal membutuhkan standar higiene ketat di dapur umum.
-                Bagaimana memastikan distribusi ribuan porsi tetap bebas kontaminasi bakteri?
+            <div class="bg-[var(--dark-grey)] text-white rounded-2xl p-6 shadow-lg relative overflow-hidden">
+              <div class="absolute top-0 right-0 -mt-2 -mr-2 w-16 h-16 bg-[var(--accent)] rounded-full opacity-20 blur-xl"></div>
+              <h4 class="font-bold text-[var(--accent)] text-lg mb-4 flex items-center gap-2"><i class="fas fa-lightbulb"></i> Tahukah Kamu?</h4>
+              <p class="text-sm text-gray-300 leading-relaxed italic">
+                "Satu bakteri tunggal dapat membelah diri menjadi lebih dari
+                <strong>2 juta bakteri</strong> hanya dalam waktu 7 jam jika berada pada suhu ruang yang hangat."
               </p>
-              <a href="#"
-                class="inline-flex items-center text-sm font-bold text-[var(--primary)] hover:text-[var(--accent)] transition-colors">
-                Baca Selengkapnya
-                <i class="fas fa-arrow-right ml-2 text-xs transition-transform group-hover:translate-x-1"></i>
-              </a>
+              <div class="mt-4 pt-4 border-t border-gray-700 text-xs text-gray-400">Sumber: WHO Food Safety</div>
             </div>
+            <div class="bg-gradient-to-br from-[var(--primary)] to-[var(--accent)] rounded-2xl p-6 text-white text-center shadow-lg">
+              <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 backdrop-blur-sm">
+                <i class="fas fa-bullhorn text-xl"></i>
+              </div>
+              <h4 class="font-bold text-lg mb-2">Temukan Pelanggaran?</h4>
+              <p class="text-sm text-white/90 mb-4">Jangan diam saja jika melihat pangan tidak aman di sekolah atau lingkunganmu.</p>
+              <a href="./laporan.html" class="block w-full bg-white text-[var(--primary)] font-bold py-2 rounded-lg text-sm hover:bg-gray-100 transition-colors shadow-md"> Buat Laporan </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
 
-            
-          </div>
-          <div class="bg-[var(--dark-grey)] text-white rounded-2xl p-6 shadow-lg relative overflow-hidden">
-            <div
-              class="absolute top-0 right-0 -mt-2 -mr-2 w-16 h-16 bg-[var(--accent)] rounded-full opacity-20 blur-xl">
-            </div>
-            <h4 class="font-bold text-[var(--accent)] text-lg mb-4 flex items-center gap-2">
-              <i class="fas fa-lightbulb"></i> Tahukah Kamu?
-            </h4>
-            <p class="text-sm text-gray-300 leading-relaxed italic">
-              "Satu bakteri tunggal dapat membelah diri menjadi lebih dari
-              <strong>2 juta bakteri</strong> hanya dalam waktu 7 jam jika berada pada suhu ruang
-              yang hangat."
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-700 text-xs text-gray-400">
-              Sumber: WHO Food Safety
-            </div>
-          </div>
-          <div
-            class="bg-gradient-to-br from-[var(--primary)] to-[var(--accent)] rounded-2xl p-6 text-white text-center shadow-lg">
-            <div
-              class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 backdrop-blur-sm">
-              <i class="fas fa-bullhorn text-xl"></i>
-            </div>
-            <h4 class="font-bold text-lg mb-2">Temukan Pelanggaran?</h4>
-            <p class="text-sm text-white/90 mb-4">
-              Jangan diam saja jika melihat pangan tidak aman di sekolah atau lingkunganmu.
-            </p>
-            <a href="./laporan.html"
-              class="block w-full bg-white text-[var(--primary)] font-bold py-2 rounded-lg text-sm hover:bg-gray-100 transition-colors shadow-md">
-              Buat Laporan
-            </a>
+    <footer class="bg-[var(--dark-grey)] text-gray-300 py-8 px-5 lg:px-16 mt-auto border-t border-gray-600/30">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 items-center">
+        <div class="flex justify-center sm:justify-start mb-4 sm:mb-0">
+          <div class="h-12 w-12 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center">
+            <img src="../assets/logo.png" alt="Logo Footer" class="h-full w-full object-contain" />
           </div>
         </div>
-      </aside>
-    </div>
-  </main>
-  <footer class="bg-[var(--dark-grey)] text-gray-300 py-8 px-5 lg:px-16 mt-auto border-t border-gray-600/30">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 items-center">
-      <div class="flex justify-center sm:justify-start mb-4 sm:mb-0">
-        <div class="h-12 w-12 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center">
-          <img src="../assets/logo.png" alt="Logo Footer" class="h-full w-full object-contain" />
+        <div class="text-center text-sm tracking-wide mb-4 sm:mb-0">© 2025 PanganCeria. All Rights Reserved.</div>
+        <div class="flex justify-center sm:justify-end space-x-5 text-white text-xl">
+          <a href="https://www.instagram.com/" class="hover:text-[var(--primary)] transition-colors" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/Pangan-Ceria" class="hover:text-[var(--primary)] transition-colors" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/" class="hover:text-[var(--primary)] transition-colors" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
       </div>
-      <div class="text-center text-sm tracking-wide mb-4 sm:mb-0">
-        © 2025 PanganCeria. All Rights Reserved.
-      </div>
-      <div class="flex justify-center sm:justify-end space-x-5 text-white text-xl">
-        <a href="https://www.instagram.com/mndprscl7?igsh=MWpyNDNuMTRyc3FmMA=="
-          class="hover:text-[var(--primary)] transition-colors">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/Pangan-Ceria" class="hover:text-[var(--primary)] transition-colors">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/priscilialz0333/" class="hover:text-[var(--primary)] transition-colors">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/script.js"></script>
-</body>
+    </footer>
 
+    <script src="../js/script.js"></script>
+  </body>
 </html>

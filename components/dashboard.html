@@ -1,279 +1,208 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pangan Ceria - Mengawal Pangan Aman</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="../assets/logo-tab.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <title>Pangan Ceria - Mengawal Pangan Aman</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/png" href="../assets/logo-tab.png" />
-</head>
-
-<body class="font-sans text-gray-800 antialiased flex flex-col min-h-screen">
-  <header
-    class="w-full bg-[var(--bg-header)] flex justify-between items-center px-5 lg:px-16 py-5 shadow-sm relative z-50">
-    <div class="logo">
-      <div class="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center">
-        <img src="../assets/logo.png" alt="Pangan Ceria Logo"
-          class="h-full w-full object-contain hover:scale-110 transition-transform duration-300 cursor-pointer" />
+  <body class="font-sans text-gray-800 antialiased flex flex-col min-h-screen">
+    <header class="w-full bg-[var(--bg-header)] flex justify-between items-center px-5 lg:px-16 py-5 shadow-sm relative z-50">
+      <div class="logo">
+        <div class="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center">
+          <img src="../assets/logo.png" alt="Pangan Ceria Logo" class="h-full w-full object-contain hover:scale-110 transition-transform duration-300 cursor-pointer" />
+        </div>
       </div>
-    </div>
-    <button
-      class="menu-toggle lg:hidden text-gray-800 text-2xl focus:outline-none hover:text-[var(--primary)] transition duration-300 transform active:scale-90">
-      <i class="fas fa-bars"></i>
-    </button>
-    <nav class="nav-menu">
-      <ul class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
-        <li>
-          <a href="../index.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Home
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./about.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            About us
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./dashboard.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Dashboard
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./edukasi.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Edukasi
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./audit.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Audit
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li class="lg:hidden w-full">
-          <a href="./laporan.html" class="block w-full">
-            <button class="bg-[var(--dark)] text-white font-bold w-full py-2.5 rounded-md text-sm shadow-lg">
-              Lapor
-            </button>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="hidden lg:block">
-      <a href="./laporan.html" class="inline-block">
-        <button
-          class="bg-[var(--dark)] text-white font-bold px-8 py-2.5 rounded-md text-sm shadow-lg transition-all duration-300 hover:bg-black hover:-translate-y-1 hover:shadow-2xl active:translate-y-0">
-          Lapor
-        </button>
-      </a>
-    </div>
-  </header>
-  <main class="flex-grow">
-    <section
-      class="dashboard-hero relative w-full h-[300px] lg:h-[400px] overflow-hidden flex items-center justify-center text-center px-4">
-      <div class="absolute inset-0 bg-black/65 z-0"></div>
-      <h1 class="relative z-10 text-white text-2xl md:text-4xl font-bold leading-tight drop-shadow-lg">
-        Dashboard Keamanan<br />Pangan Nasional
-      </h1>
-    </section>
-    <section class="py-10 lg:py-20 px-5 lg:px-16 bg-[var(--bg-light)] text-center">
-      <h1 class="text-2xl lg:text-3xl font-bold mb-8 text-dark">
-        Dashboard Kasus Keracunan 2025
-      </h1>
+      <button class="menu-toggle lg:hidden text-gray-800 text-2xl focus:outline-none hover:text-[var(--primary)] transition duration-300 transform active:scale-90">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-menu">
+        <ul class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
+          <li>
+            <a href="../index.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Home
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              About us
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./dashboard.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Dashboard
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./edukasi.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Edukasi
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./audit.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Audit
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li class="lg:hidden w-full">
+            <a href="./laporan.html" class="block w-full">
+              <button class="bg-[var(--dark)] text-white font-bold w-full py-2.5 rounded-md text-sm shadow-lg">Lapor</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hidden lg:block">
+        <a href="./laporan.html" class="inline-block">
+          <button class="bg-[var(--dark)] text-white font-bold px-8 py-2.5 rounded-md text-sm shadow-lg transition-all duration-300 hover:bg-black hover:-translate-y-1 hover:shadow-2xl active:translate-y-0">Lapor</button>
+        </a>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <section class="dashboard-hero relative w-full h-[300px] lg:h-[400px] overflow-hidden flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 bg-black/65 z-0"></div>
+        <h1 class="relative z-10 text-white text-2xl md:text-4xl font-bold leading-tight drop-shadow-lg">Dashboard Keamanan<br />Pangan Nasional</h1>
+      </section>
+      <section class="py-10 lg:py-20 px-5 lg:px-16 bg-[var(--bg-light)] text-center">
+        <h1 class="text-2xl lg:text-3xl font-bold mb-8 text-dark">Dashboard Kasus Keracunan 2025</h1>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        <div class="lg:col-span-9 bg-white p-3 md:p-4 rounded-lg shadow w-full">
-          <div class="flex flex-wrap gap-2 mb-6 justify-center lg:justify-start">
-            <button id="trendBtn" class="chart-toggle-btn active text-xs lg:text-sm">
-              Tren Jumlah Korban
-            </button>
-            <button id="provinceBtn" class="chart-toggle-btn text-xs lg:text-sm">
-              Distribusi/Provinsi
-            </button>
-            <button id="schoolBtn" class="chart-toggle-btn text-xs lg:text-sm">
-              Distribusi/Instansi
-            </button>
-          </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-9 bg-white p-3 md:p-4 rounded-lg shadow w-full">
+            <div class="flex flex-wrap gap-2 mb-6 justify-center lg:justify-start">
+              <button id="trendBtn" class="chart-toggle-btn active text-xs lg:text-sm">Tren Korban per Bulan</button>
+              <button id="provinceBtn" class="chart-toggle-btn text-xs lg:text-sm">Distribusi Korban per Provinsi</button>
+              <button id="schoolBtn" class="chart-toggle-btn text-xs lg:text-sm">Distribusi Korban per Instansi</button>
+            </div>
 
-          <div id="trendView" class="relative w-full h-72 md:h-80 lg:h-96 mb-8">
-            <canvas id="trendChart"></canvas>
-          </div>
+            <div id="trendView" class="relative w-full h-72 md:h-80 lg:h-96 mb-8 py-6">
+              <canvas id="trendChart"></canvas>
+            </div>
 
-          <div id="provinceView" class="hidden relative w-full h-[600px] lg:h-96 mb-8">
-            <div class="relative w-full h-full flex flex-col">
-              <h3 class="text-center font-medium mb-2 shrink-0">Segmentasi Provinsi</h3>
-              <div class="relative flex-grow w-full min-h-0">
-                <canvas id="provinceChart"></canvas>
+            <div id="provinceView" class="hidden relative w-full h-[600px] lg:h-96 mb-8">
+              <div class="relative w-full h-full flex flex-col">
+                <div class="relative flex-grow w-full min-h-0 py-6">
+                  <canvas id="provinceChart"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div id="schoolView" class="hidden relative w-full h-[600px] lg:h-96 mb-8">
+              <div class="relative w-full h-full flex flex-col">
+                <div class="relative flex-grow w-full min-h-0 py-6">
+                  <canvas id="schoolChart"></canvas>
+                </div>
               </div>
             </div>
           </div>
 
-          <div id="schoolView" class="hidden relative w-full h-[600px] lg:h-96 mb-8">
-            <div class="relative w-full h-full flex flex-col">
-              <h3 class="text-center font-medium mb-2 shrink-0">Segmentasi Instansi</h3>
-              <div class="relative flex-grow w-full min-h-0">
-                <canvas id="schoolChart"></canvas>
+          <div class="lg:col-span-3 bg-white p-4 rounded-lg shadow w-full">
+            <h2 class="text-lg font-semibold mb-3 text-gray-700">Top Case</h2>
+            <div class="space-y-3">
+              <div class="news-card">
+                <a href="https://bengkulu.bpk.go.id/wp-content/uploads/2025/08/20250829-Tertinggi-Korban-MBG-di-Lebong-539-Orang.pdf" target="_blank">
+                  <p class="font-medium">539 korban</p>
+                  <p class="text-sm">27 Agustus 2025</p>
+                  <p class="text-sm text-gray-600">Lebong, Bengkulu</p>
+                </a>
+              </div>
+              <div class="p-3 bg-red-50 rounded-lg">
+                <a href="https://yogyakarta.kompas.com/read/2025/10/16/141711978/426-siswa-sma-1-yogyakarta-sakit-perut-usai-santap-mbg" target="_blank" class="text-red-600 hover:underline">
+                  <p class="font-medium">426 korban</p>
+                  <p class="text-sm">15 October 2025</p>
+                  <p class="text-sm text-gray-600">Kota Yogyakarta, DIY</p>
+                </a>
+              </div>
+              <div class="p-3 bg-red-50 rounded-lg">
+                <a href="https://www.tvonenews.com/berita/nasional/376029-338-siswa-keracunan-mbg-di-banggai-kepala-bgn-sebut-karena-ganti-supplier-ikan-cakalang" target="_blank" class="text-red-600 hover:underline">
+                  <p class="font-medium">338 korban</p>
+                  <p class="text-sm">17 September 2025</p>
+                  <p class="text-sm text-gray-600">Banggai, Sulawesi Tengah</p>
+                </a>
+              </div>
+              <div class="p-3 bg-red-50 rounded-lg">
+                <a href="https://news.detik.com/berita/d-7897505/4-langkah-bgn-usai-bermunculan-kasus-pelajar-keracunan-mbg" target="_blank" class="text-red-600 hover:underline">
+                  <p class="font-medium">320 korban</p>
+                  <p class="text-sm">30 April 2025</p>
+                  <p class="text-sm text-gray-600">Kota Bandung, Jawa Barat</p>
+                </a>
+              </div>
+              <div class="p-3 bg-red-50 rounded-lg">
+                <a href="https://yogyakarta.kompas.com/read/2025/08/20/164930478/497-siswa-kulon-progo-keracunan-3-jenis-bakteri-berbahaya-ditemukan-di" target="_blank" class="text-red-600 hover:underline">
+                  <p class="font-medium">305 korban</p>
+                  <p class="text-sm">31 Juli 2025</p>
+                  <p class="text-sm text-gray-600">Kulon Progo, DIY</p>
+                </a>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="lg:col-span-3 bg-white p-4 rounded-lg shadow w-full">
-          <h2 class="text-lg font-semibold mb-3 text-gray-700">Top Case</h2>
-          <div class="space-y-3">
-            <div class="news-card">
-              <a href="https://bengkulu.bpk.go.id/wp-content/uploads/2025/08/20250829-Tertinggi-Korban-MBG-di-Lebong-539-Orang.pdf"
-                target="_blank">
-                <p class="font-medium">539 korban</p>
-                <p class="text-sm">27 Agustus 2025</p>
-                <p class="text-sm text-gray-600">Lebong, Bengkulu</p>
-              </a>
-            </div>
-            <div class="p-3 bg-red-50 rounded-lg">
-              <a href="https://yogyakarta.kompas.com/read/2025/10/16/141711978/426-siswa-sma-1-yogyakarta-sakit-perut-usai-santap-mbg"
-                target="_blank" class="text-red-600 hover:underline">
-                <p class="font-medium">426 korban</p>
-                <p class="text-sm">15 October 2025</p>
-                <p class="text-sm text-gray-600">Kota Yogyakarta, DIY</p>
-              </a>
-            </div>
-            <div class="p-3 bg-red-50 rounded-lg">
-              <a href="https://www.tvonenews.com/berita/nasional/376029-338-siswa-keracunan-mbg-di-banggai-kepala-bgn-sebut-karena-ganti-supplier-ikan-cakalang"
-                target="_blank" class="text-red-600 hover:underline">
-                <p class="font-medium">338 korban</p>
-                <p class="text-sm">17 September 2025</p>
-                <p class="text-sm text-gray-600">Banggai, Sulawesi Tengah</p>
-              </a>
-            </div>
-            <div class="p-3 bg-red-50 rounded-lg">
-              <a href="https://news.detik.com/berita/d-7897505/4-langkah-bgn-usai-bermunculan-kasus-pelajar-keracunan-mbg"
-                target="_blank" class="text-red-600 hover:underline">
-                <p class="font-medium">320 korban</p>
-                <p class="text-sm">30 April 2025</p>
-                <p class="text-sm text-gray-600">Kota Bandung, Jawa Barat</p>
-              </a>
-            </div>
-            <div class="p-3 bg-red-50 rounded-lg">
-              <a href="https://yogyakarta.kompas.com/read/2025/08/20/164930478/497-siswa-kulon-progo-keracunan-3-jenis-bakteri-berbahaya-ditemukan-di"
-                target="_blank" class="text-red-600 hover:underline">
-                <p class="font-medium">305 korban</p>
-                <p class="text-sm">31 Juli 2025</p>
-                <p class="text-sm text-gray-600">Kulon Progo, DIY</p>
-              </a>
-            </div>
+      </section>
+      <section class="py-10 lg:py-20 px-5 lg:px-16 bg-white">
+        <h2 class="text-2xl lg:text-3xl font-bold text-center text-[var(--dark)] mb-4">Standar Keamanan Pangan</h2>
+        <p class="max-w-4xl mx-auto text-justify text-gray-700 mb-12 leading-relaxed text-sm lg:text-base">
+          Melihat tren kasus keracunan yang perlu diwaspadai dalam pelaksanaan MBG, implementasi standar keamanan pangan yang ketat adalah kunci fundamental untuk menjamin kesehatan penerima. Oleh karena itu, mari kita pahami bersama Enam
+          Pilar Utama Standar Keamanan Pangan Nasional yang wajib diterapkan di setiap titik layanan berdasarkan Undang-Undang Nomor 18 Tahun 2012 tentang Pangan.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
+            <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Pengendalian Cemaran</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">Mencegah bahaya biologis, kimia, dan fisik melalui pengawasan ketat pada setiap proses penanganan makanan.</p>
+          </div>
+          <div class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
+            <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Higiene & Sanitasi</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">Menjamin kebersihan petugas, fasilitas, peralatan, serta sumber air untuk mencegah kontaminasi silang.</p>
+          </div>
+          <div class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
+            <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Sistem Jaminan Mutu</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">Menerapkan CPPOB dan idealnya HACCP untuk mengendalikan titik proses paling berisiko seperti pendinginan, penyimpanan, dan pemasakan.</p>
+          </div>
+          <div class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
+            <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Pengawasan Bahan Baku</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">Memeriksa kualitas, kebersihan, suhu, dan kondisi bahan pangan saat penerimaan untuk mencegah bahan rusak masuk proses.</p>
+          </div>
+          <div class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
+            <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Labeling & Izin Edar</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">Produk harus berizin resmi (BPOM/PIRT) dan memiliki label jelas mencakup komposisi, produsen, dan tanggal kedaluwarsa.</p>
+          </div>
+          <div class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
+            <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Ketertelusuran (Traceability)</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">Menelusuri riwayat pangan dari hulu ke hilir agar insiden keracunan dapat segera diidentifikasi dan ditarik dari peredaran.</p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="py-10 lg:py-20 px-5 lg:px-16 bg-white">
-      <h2 class="text-2xl lg:text-3xl font-bold text-center text-[var(--dark)] mb-4">
-        Standar Keamanan Pangan
-      </h2>
-      <p class="max-w-4xl mx-auto text-justify text-gray-700 mb-12 leading-relaxed text-sm lg:text-base">
-        Melihat tren kasus keracunan yang perlu diwaspadai dalam pelaksanaan MBG, implementasi
-        standar keamanan pangan yang ketat adalah kunci fundamental untuk menjamin kesehatan
-        penerima. Oleh karena itu, mari kita pahami bersama Enam Pilar Utama Standar Keamanan
-        Pangan Nasional yang wajib diterapkan di setiap titik layanan berdasarkan Undang-Undang
-        Nomor 18 Tahun 2012 tentang Pangan.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        <div
-          class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
-          <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Pengendalian Cemaran</h3>
-          <p class="text-gray-700 text-sm leading-relaxed">
-            Mencegah bahaya biologis, kimia, dan fisik melalui pengawasan ketat pada setiap proses
-            penanganan makanan.
-          </p>
-        </div>
-        <div
-          class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
-          <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Higiene & Sanitasi</h3>
-          <p class="text-gray-700 text-sm leading-relaxed">
-            Menjamin kebersihan petugas, fasilitas, peralatan, serta sumber air untuk mencegah
-            kontaminasi silang.
-          </p>
-        </div>
-        <div
-          class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
-          <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Sistem Jaminan Mutu</h3>
-          <p class="text-gray-700 text-sm leading-relaxed">
-            Menerapkan CPPOB dan idealnya HACCP untuk mengendalikan titik proses paling berisiko
-            seperti pendinginan, penyimpanan, dan pemasakan.
-          </p>
-        </div>
-        <div
-          class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
-          <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Pengawasan Bahan Baku</h3>
-          <p class="text-gray-700 text-sm leading-relaxed">
-            Memeriksa kualitas, kebersihan, suhu, dan kondisi bahan pangan saat penerimaan untuk
-            mencegah bahan rusak masuk proses.
-          </p>
-        </div>
-        <div
-          class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
-          <h3 class="text-lg font-bold text-[var(--primary)] mb-2">Labeling & Izin Edar</h3>
-          <p class="text-gray-700 text-sm leading-relaxed">
-            Produk harus berizin resmi (BPOM/PIRT) dan memiliki label jelas mencakup komposisi,
-            produsen, dan tanggal kedaluwarsa.
-          </p>
-        </div>
-        <div
-          class="p-6 bg-[var(--bg-light)] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.03] cursor-pointer">
-          <h3 class="text-lg font-bold text-[var(--primary)] mb-2">
-            Ketertelusuran (Traceability)
-          </h3>
-          <p class="text-gray-700 text-sm leading-relaxed">
-            Menelusuri riwayat pangan dari hulu ke hilir agar insiden keracunan dapat segera
-            diidentifikasi dan ditarik dari peredaran.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="bg-[var(--dark-grey)] text-gray-300 py-8 px-5 lg:px-16 mt-auto border-t border-gray-600/30">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 items-center">
-      <div class="flex justify-center sm:justify-start mb-4 sm:mb-0">
-        <div class="h-12 w-12 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center">
-          <img src="../assets/logo.png" alt="Logo Footer" class="h-full w-full object-contain" />
-        </div>
-      </div>
-      <div class="text-center text-sm tracking-wide mb-4 sm:mb-0">
-        © 2025 PanganCeria. All Rights Reserved.
-      </div>
-      <div class="flex justify-center sm:justify-end space-x-5 text-white text-xl">
-        <a href="https://www.instagram.com/mndprscl7?igsh=MWpyNDNuMTRyc3FmMA=="
-          class="hover:text-[var(--primary)] transition-colors">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/Pangan-Ceria" class="hover:text-[var(--primary)] transition-colors">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/priscilialz0333/" class="hover:text-[var(--primary)] transition-colors">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/script.js"></script>
-</body>
+      </section>
+    </main>
 
+    <footer class="bg-[var(--dark-grey)] text-gray-300 py-8 px-5 lg:px-16 mt-auto border-t border-gray-600/30">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 items-center">
+        <div class="flex justify-center sm:justify-start mb-4 sm:mb-0">
+          <div class="h-12 w-12 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center">
+            <img src="../assets/logo.png" alt="Logo Footer" class="h-full w-full object-contain" />
+          </div>
+        </div>
+        <div class="text-center text-sm tracking-wide mb-4 sm:mb-0">© 2025 PanganCeria. All Rights Reserved.</div>
+        <div class="flex justify-center sm:justify-end space-x-5 text-white text-xl">
+          <a href="https://www.instagram.com/" class="hover:text-[var(--primary)] transition-colors" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/Pangan-Ceria" class="hover:text-[var(--primary)] transition-colors" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/" class="hover:text-[var(--primary)] transition-colors" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
 </html>

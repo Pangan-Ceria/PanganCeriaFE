@@ -1,276 +1,210 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pangan Ceria - Mengawal Pangan Aman</title>
+    <link rel="icon" type="image/png" href="../assets/logo-tab.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <title>Pangan Ceria - Mengawal Pangan Aman</title>
-  <link rel="icon" type="image/png" href="../assets/logo-tab.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body class="font-sans text-gray-800 antialiased flex flex-col min-h-screen">
-  <header
-    class="w-full bg-[var(--bg-header)] flex justify-between items-center px-5 lg:px-16 py-5 shadow-sm relative z-50">
-    <div class="logo">
-      <div class="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center">
-        <img src="../assets/logo.png" alt="Pangan Ceria Logo"
-          class="h-full w-full object-contain hover:scale-110 transition-transform duration-300 cursor-pointer" />
+  <body class="font-sans text-gray-800 antialiased flex flex-col min-h-screen">
+    <header class="w-full bg-[var(--bg-header)] flex justify-between items-center px-5 lg:px-16 py-5 shadow-sm relative z-50">
+      <div class="logo">
+        <div class="h-12 w-12 rounded-full overflow-hidden flex items-center justify-center">
+          <img src="../assets/logo.png" alt="Pangan Ceria Logo" class="h-full w-full object-contain hover:scale-110 transition-transform duration-300 cursor-pointer" />
+        </div>
       </div>
-    </div>
-    <button
-      class="menu-toggle lg:hidden text-gray-800 text-2xl focus:outline-none hover:text-[var(--primary)] transition duration-300 transform active:scale-90">
-      <i class="fas fa-bars"></i>
-    </button>
-    <nav class="nav-menu">
-      <ul class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
-        <li>
-          <a href="../index.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Home
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./about.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            About us
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./dashboard.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Dashboard
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./edukasi.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Edukasi
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li>
-          <a href="./audit.html"
-            class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-            Audit
-            <span
-              class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-          </a>
-        </li>
-        <li class="lg:hidden w-full">
-          <a href="./laporan.html" class="block w-full">
-            <button class="bg-[var(--dark)] text-white font-bold w-full py-2.5 rounded-md text-sm shadow-lg">
-              Lapor
-            </button>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="hidden lg:block">
-      <a href="./laporan.html" class="inline-block">
-        <button
-          class="bg-[var(--dark)] text-white font-bold px-8 py-2.5 rounded-md text-sm shadow-lg transition-all duration-300 hover:bg-black hover:-translate-y-1 hover:shadow-2xl active:translate-y-0">
-          Lapor
-        </button>
-      </a>
-    </div>
-  </header>
-  <main class="flex-grow">
-    <section
-      class="audit-hero relative w-full h-[400px] overflow-hidden flex items-center justify-center text-center px-4">
-      <div class="absolute inset-0 bg-black/65 z-0"></div>
-      <h1 class="relative z-10 text-white text-3xl md:text-4xl font-bold leading-tight drop-shadow-lg">
-        Cek Bahan Baku: Status <br />Kualitas Program Gizi
-      </h1>
-    </section>
-    <div class="container mx-auto px-4 py-12 lg:py-16">
-      <section id="audit-bahan" class="mb-12">
-        <h2 class="audit-title text-2xl md:text-3xl font-bold text-[var(--dark)] mb-8">
-          Audit Bahan Makanan
-        </h2>
-        <div
-          class="audit-controls flex flex-col md:flex-row justify-between items-start md:items-center mb-6 bg-gray-50 p-4 rounded-lg border">
-          <div class="search-input relative w-full md:w-1/3 mb-4 md:mb-0">
-            <input type="text" id="search-bahan" placeholder="Cari Bahan Makanan..."
-              class="w-full p-2 pl-10 border border-gray-300 rounded-md text-sm shadow-sm focus:ring-[var(--primary)] focus:border-[var(--primary)] transition duration-150" />
-            <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-          </div>
-
-          <div class="flex items-center space-x-3 mt-3 md:mt-0">
-            <p class="text-sm font-medium text-gray-700 hidden sm:block">Filter Status:</p>
-            <label for="filter-status" class="sr-only">Filter Status</label>
-            <select id="filter-status"
-              class="p-2 border border-gray-300 rounded-md text-sm shadow-sm focus:ring-[var(--primary)] focus:border-[var(--primary)] transition duration-150">
-              <option value="semua">Semua Status</option>
-              <option value="aman">Aman</option>
-              <option value="berisiko">Berisiko</option>
-              <option value="perlu-perhatian">Perlu Perhatian</option>
-            </select>
-          </div>
-        </div>
-        <div class="table-responsive">
-          <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
-              <tr>
-                <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                  BAHAN MAKANAN
-                </th>
-                <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                  MASA SIMPAN
-                </th>
-                <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                  KEBERSIHAN
-                </th>
-                <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                  POTENSI KONTAMINASI
-                </th>
-                <th class="px-6 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                  STATUS
-                </th>
-                <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                  TINDAK LANJUT
-                </th>
-              </tr>
-            </thead>
-            <tbody id="audit-table-body" class="bg-white divide-y divide-gray-100">
-              <tr class="data-row status-aman">
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
-                  Daging Ayam
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2 hari</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Baik</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Rendah</td>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
-                  <span class="status">Aman</span>
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-500">Lanjutkan penyimpanan beku.</td>
-              </tr>
-              <tr class="data-row status-perlu-perhatian">
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
-                  Nasi Matang
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">10 jam</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Baik</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sedang</td>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
-                  <span class="status">Perlu Perhatian</span>
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-500">
-                  Segera konsumsi atau dinginkan (4°C)
-                </td>
-              </tr>
-              <tr class="data-row status-berisiko">
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
-                  Sayuran Hijau
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">5 hari</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Kurang</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tinggi</td>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
-                  <span class="status">Berisiko</span>
-                </td>
-                <td class="px-6 py-4 text-sm">Buang/Pisahkan, lakukan pencucian sanitasi.</td>
-              </tr>
-              <tr class="data-row status-aman">
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
-                  Susu Pasteurisasi
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">7 hari</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Baik</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Rendah</td>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
-                  <span class="status">Aman</span>
-                </td>
-                <td class="px-6 py-4 text-sm text-gray-500">
-                  Periksa tanggal kedaluwarsa rutin.
-                </td>
-              </tr>
-              <tr class="data-row status-berisiko">
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">
-                  Ikan Segar
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1 hari</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Buruk</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tinggi</td>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
-                  <span class="status">Berisiko</span>
-                </td>
-                <td class="px-6 py-4 text-sm">Jangan digunakan. Segera musnahkan/laporkan.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <button class="menu-toggle lg:hidden text-gray-800 text-2xl focus:outline-none hover:text-[var(--primary)] transition duration-300 transform active:scale-90">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-menu">
+        <ul class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
+          <li>
+            <a href="../index.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Home
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              About us
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./dashboard.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Dashboard
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./edukasi.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Edukasi
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="./audit.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+              Audit
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+            </a>
+          </li>
+          <li class="lg:hidden w-full">
+            <a href="./laporan.html" class="block w-full">
+              <button class="bg-[var(--dark)] text-white font-bold w-full py-2.5 rounded-md text-sm shadow-lg">Lapor</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hidden lg:block">
+        <a href="./laporan.html" class="inline-block">
+          <button class="bg-[var(--dark)] text-white font-bold px-8 py-2.5 rounded-md text-sm shadow-lg transition-all duration-300 hover:bg-black hover:-translate-y-1 hover:shadow-2xl active:translate-y-0">Lapor</button>
+        </a>
+      </div>
+    </header>
+    <main class="flex-grow">
+      <section class="audit-hero relative w-full h-[400px] overflow-hidden flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 bg-black/65 z-0"></div>
+        <h1 class="relative z-10 text-white text-3xl md:text-4xl font-bold leading-tight drop-shadow-lg">Cek Bahan Baku: Status <br />Kualitas Program Gizi</h1>
       </section>
-      <section id="kriteria-penilaian">
-        <h2 class="kriteria-title text-2xl md:text-3xl font-bold text-[var(--dark)] mb-8">
-          Kriteria Penilaian Keamanan Pangan
-        </h2>
-        <div class="kriteria-grid grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div
-            class="kriteria-box p-4 rounded-lg shadow-md border-l-4 border-[var(--green-secondary)] bg-[var(--kriteria-aman-bg)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-            <h3 class="font-bold text-lg text-[var(--green-secondary)] mb-2">Aman</h3>
-            <p class="text-sm text-gray-700">
-              Memenuhi semua standar keamanan pangan (BPOM/SNI) dengan masa simpan optimal dan
-              potensi kontaminasi Rendah. Dapat digunakan segera.
-            </p>
-          </div>
-          <div
-            class="kriteria-box p-4 rounded-lg shadow-md border-l-4 border-[var(--accent)] bg-[var(--kriteria-perhatian-bg)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-            <h3 class="font-bold text-lg text-[var(--accent)] mb-2">Perlu Perhatian</h3>
-            <p class="text-sm text-gray-700">
-              Memiliki 1-2 indikator (misalnya, masa simpan mendekati batas atau kebersihan
-              'Kurang') yang kurang memenuhi standar. Membutuhkan tindakan pencegahan/penanganan
-              segera (CCP).
-            </p>
-          </div>
-          <div
-            class="kriteria-box p-4 rounded-lg shadow-md border-l-4 border-[var(--red-danger)] bg-[var(--kriteria-berisiko-bg)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-            <h3 class="font-bold text-lg text-[var(--red-danger)] mb-2">Berisiko</h3>
-            <p class="text-sm text-gray-700">
-              Tidak memenuhi standar keamanan (bau, tekstur, atau suhu penyimpanan). Dinyatakan
-              potensi kontaminasi Tinggi. Tidak boleh dikonsumsi.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
-  <footer class="bg-[var(--dark-grey)] text-gray-300 py-8 px-5 lg:px-16 mt-auto border-t border-gray-600/30">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 items-center">
-      <div class="flex justify-center sm:justify-start mb-4 sm:mb-0">
-        <div class="h-12 w-12 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center">
-          <img src="../assets/logo.png" alt="Logo Footer" class="h-full w-full object-contain" />
-        </div>
-      </div>
-      <div class="text-center text-sm tracking-wide mb-4 sm:mb-0">
-        © 2025 PanganCeria. All Rights Reserved.
-      </div>
-      <div class="flex justify-center sm:justify-end space-x-5 text-white text-xl">
-        <a href="https://www.instagram.com/mndprscl7?igsh=MWpyNDNuMTRyc3FmMA=="
-          class="hover:text-[var(--primary)] transition-colors">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://github.com/Pangan-Ceria" class="hover:text-[var(--primary)] transition-colors">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/priscilialz0333/" class="hover:text-[var(--primary)] transition-colors">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <script src="../js/script.js"></script>
-</body>
+      <div class="container mx-auto px-4 py-12 lg:py-16">
+        <section id="audit-bahan" class="mb-12">
+          <h2 class="audit-title text-2xl md:text-3xl font-bold text-[var(--dark)] mb-8">Audit Bahan Makanan</h2>
+          <div class="audit-controls flex flex-col md:flex-row justify-between items-start md:items-center mb-6 bg-gray-50 p-4 rounded-lg border">
+            <div class="search-input relative w-full md:w-1/3 mb-4 md:mb-0">
+              <input
+                type="text"
+                id="search-bahan"
+                placeholder="Cari Bahan Makanan..."
+                class="w-full p-2 pl-10 border border-gray-300 rounded-md text-sm shadow-sm focus:ring-[var(--primary)] focus:border-[var(--primary)] transition duration-150"
+              />
+              <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
 
+            <div class="flex items-center space-x-3 mt-3 md:mt-0">
+              <p class="text-sm font-medium text-gray-700 hidden sm:block">Filter Status:</p>
+              <label for="filter-status" class="sr-only">Filter Status</label>
+              <select id="filter-status" class="p-2 border border-gray-300 rounded-md text-sm shadow-sm focus:ring-[var(--primary)] focus:border-[var(--primary)] transition duration-150">
+                <option value="semua">Semua Status</option>
+                <option value="aman">Aman</option>
+                <option value="berisiko">Berisiko</option>
+                <option value="perlu-perhatian">Perlu Perhatian</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">BAHAN MAKANAN</th>
+                  <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">MASA SIMPAN</th>
+                  <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">KEBERSIHAN</th>
+                  <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">POTENSI KONTAMINASI</th>
+                  <th class="px-6 py-3 text-center text-xs font-semibold text-gray-600 uppercase tracking-wider">STATUS</th>
+                  <th class="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">TINDAK LANJUT</th>
+                </tr>
+              </thead>
+              <tbody id="audit-table-body" class="bg-white divide-y divide-gray-100">
+                <tr class="data-row status-aman">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">Daging Ayam</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2 hari</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Baik</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Rendah</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-center">
+                    <span class="status">Aman</span>
+                  </td>
+                  <td class="px-6 py-4 text-sm text-gray-500">Lanjutkan penyimpanan beku.</td>
+                </tr>
+                <tr class="data-row status-perlu-perhatian">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">Nasi Matang</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">10 jam</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Baik</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sedang</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-center">
+                    <span class="status">Perlu Perhatian</span>
+                  </td>
+                  <td class="px-6 py-4 text-sm text-gray-500">Segera konsumsi atau dinginkan (4°C)</td>
+                </tr>
+                <tr class="data-row status-berisiko">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">Sayuran Hijau</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">5 hari</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Kurang</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tinggi</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-center">
+                    <span class="status">Berisiko</span>
+                  </td>
+                  <td class="px-6 py-4 text-sm">Buang/Pisahkan, lakukan pencucian sanitasi.</td>
+                </tr>
+                <tr class="data-row status-aman">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">Susu Pasteurisasi</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">7 hari</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Baik</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Rendah</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-center">
+                    <span class="status">Aman</span>
+                  </td>
+                  <td class="px-6 py-4 text-sm text-gray-500">Periksa tanggal kedaluwarsa rutin.</td>
+                </tr>
+                <tr class="data-row status-berisiko">
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-medium">Ikan Segar</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1 hari</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Buruk</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tinggi</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-center">
+                    <span class="status">Berisiko</span>
+                  </td>
+                  <td class="px-6 py-4 text-sm">Jangan digunakan. Segera musnahkan/laporkan.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section id="kriteria-penilaian">
+          <h2 class="kriteria-title text-2xl md:text-3xl font-bold text-[var(--dark)] mb-8">Kriteria Penilaian Keamanan Pangan</h2>
+          <div class="kriteria-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="kriteria-box p-4 rounded-lg shadow-md border-l-4 border-[var(--green-secondary)] bg-[var(--kriteria-aman-bg)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <h3 class="font-bold text-lg text-[var(--green-secondary)] mb-2">Aman</h3>
+              <p class="text-sm text-gray-700">Memenuhi semua standar keamanan pangan (BPOM/SNI) dengan masa simpan optimal dan potensi kontaminasi Rendah. Dapat digunakan segera.</p>
+            </div>
+            <div class="kriteria-box p-4 rounded-lg shadow-md border-l-4 border-[var(--accent)] bg-[var(--kriteria-perhatian-bg)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <h3 class="font-bold text-lg text-[var(--accent)] mb-2">Perlu Perhatian</h3>
+              <p class="text-sm text-gray-700">Memiliki 1-2 indikator (misalnya, masa simpan mendekati batas atau kebersihan 'Kurang') yang kurang memenuhi standar. Membutuhkan tindakan pencegahan/penanganan segera (CCP).</p>
+            </div>
+            <div class="kriteria-box p-4 rounded-lg shadow-md border-l-4 border-[var(--red-danger)] bg-[var(--kriteria-berisiko-bg)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <h3 class="font-bold text-lg text-[var(--red-danger)] mb-2">Berisiko</h3>
+              <p class="text-sm text-gray-700">Tidak memenuhi standar keamanan (bau, tekstur, atau suhu penyimpanan). Dinyatakan potensi kontaminasi Tinggi. Tidak boleh dikonsumsi.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-[var(--dark-grey)] text-gray-300 py-8 px-5 lg:px-16 mt-auto border-t border-gray-600/30">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 items-center">
+        <div class="flex justify-center sm:justify-start mb-4 sm:mb-0">
+          <div class="h-12 w-12 rounded-full overflow-hidden bg-white shadow-md flex items-center justify-center">
+            <img src="../assets/logo.png" alt="Logo Footer" class="h-full w-full object-contain" />
+          </div>
+        </div>
+        <div class="text-center text-sm tracking-wide mb-4 sm:mb-0">© 2025 PanganCeria. All Rights Reserved.</div>
+        <div class="flex justify-center sm:justify-end space-x-5 text-white text-xl">
+          <a href="https://www.instagram.com/" class="hover:text-[var(--primary)] transition-colors" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/Pangan-Ceria" class="hover:text-[var(--primary)] transition-colors" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/" class="hover:text-[var(--primary)] transition-colors" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
 </html>
