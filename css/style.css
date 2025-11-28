@@ -17,12 +17,28 @@
   --kriteria-berisiko-bg: rgba(220, 53, 69, 0.05);
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
+/* NavBar aktif */
+.nav-link.active {
+  /* Mengubah warna teks link yang aktif */
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+/* Mengatur garis bawah (underline-bar) untuk link yang aktif */
+.nav-link.active .underline-bar {
+  /* Mengubah lebar garis menjadi 100% */
+  width: 100%;
+  /* Mengubah warna latar belakang garis */
+  background: var(--primary);
+}
+
 /* INDEX PAGE */
 .hero-bg {
-  background-image: url('../assets/1.jpg');
+  background-image: url("../assets/1.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -32,7 +48,7 @@ body {
 }
 /* LAPORAN PAGE */
 .laporan-hero {
-  background-image: url('../assets/2.jpg');
+  background-image: url("../assets/2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +58,7 @@ body {
   width: 0;
 }
 .input-file-custom::before {
-  content: 'Choose File';
+  content: "Choose File";
   display: inline-block;
   background: #e5e7eb;
   border: 1px solid #9ca3af;
@@ -85,7 +101,7 @@ body {
 
 /* ABOUT PAGE */
 .about-hero {
-  background-image: url('../assets/4.jpg');
+  background-image: url("../assets/4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -124,7 +140,7 @@ body {
 
 /*DASHBOARD PAGE*/
 .dashboard-hero {
-  background-image: url('../assets/2.jpg');
+  background-image: url("../assets/2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -183,7 +199,7 @@ canvas:hover {
 
 /* AUDIT PAGE */
 .audit-hero {
-  background-image: url('../assets/6.jpg');
+  background-image: url("../assets/6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -342,7 +358,7 @@ table td:nth-child(5) {
 
 /* EDUKASI PAGE */
 .edukasi-hero {
-  background-image: url('../assets/5.jpg');
+  background-image: url("../assets/5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -366,7 +382,7 @@ table td:nth-child(5) {
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
 }
 .edu-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   opacity: 0.07;
@@ -383,7 +399,7 @@ table td:nth-child(5) {
   display: none;
 }
 .edu-title::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -4px;
@@ -402,7 +418,7 @@ table td:nth-child(5) {
   text-align: justify;
 }
 .edu-card::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -414,36 +430,35 @@ table td:nth-child(5) {
   pointer-events: none;
 }
 .card-produkSegar::after {
-  background-image: url('../assets/edukasi/sayurSegar.png');
+  background-image: url("../assets/edukasi/sayurSegar.png");
   opacity: 0.2;
 }
 .card-daging::after {
-  background-image: url('../assets/edukasi/ikanSegar.png');
+  background-image: url("../assets/edukasi/ikanSegar.png");
 }
 .card-produkKemasan::after {
-  background-image: url('../assets/edukasi/kaleng.png');
+  background-image: url("../assets/edukasi/kaleng.png");
   opacity: 0.2;
 }
 .card-kadaluawarsa::after {
-  background-image: url('../assets/edukasi/expired.png');
+  background-image: url("../assets/edukasi/expired.png");
 }
 .card-suhuPenyimpan::after {
-  background-image: url('../assets/edukasi/termo.png');
+  background-image: url("../assets/edukasi/termo.png");
 }
 .card-kebersihan::after {
-  background-image: url('../assets/edukasi/cuciTangan.png');
+  background-image: url("../assets/edukasi/cuciTangan.png");
   opacity: 0.2;
 }
 .card-pisahkan::after {
-  background-image: url('../assets/edukasi/pisah.png');
+  background-image: url("../assets/edukasi/pisah.png");
 }
 .card-masak::after {
-  background-image: url('../assets/edukasi/masak.png');
+  background-image: url("../assets/edukasi/masak.png");
 }
 .card-suhuAman::after {
-  background-image: url('../assets/edukasi/termo.png');
+  background-image: url("../assets/edukasi/termo.png");
 }
-
 
 /* Responsive */
 @media (min-width: 1024px) {

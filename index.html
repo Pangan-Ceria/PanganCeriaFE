@@ -23,41 +23,47 @@
         <i class="fas fa-bars"></i>
       </button>
 
-      <nav class="nav-menu">
+      <nav class="nav-menu hidden lg:block">
         <ul class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-10">
           <li>
-            <a href="./index.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
+            <a href="/index.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group nav-link">
               Home
-              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-            </a>
-          </li>
-          <li>
-            <a href="./components/about.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-              About us
-              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-            </a>
-          </li>
-          <li>
-            <a href="./components/dashboard.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-              Dashboard
-              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-            </a>
-          </li>
-          <li>
-            <a href="./components/edukasi.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-              Edukasi
-              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
-            </a>
-          </li>
-          <li>
-            <a href="./components/audit.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group">
-              Audit
-              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full"></span>
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full underline-bar"></span>
             </a>
           </li>
 
-          <li class="lg:hidden w-full text-center mt-4 pt-4 border-t border-gray-200">
-            <a href="./components/laporan.html" class="inline-block w-3/4 py-2.5 px-4 bg-[var(--dark)] text-white font-bold rounded-md text-sm shadow-lg transition-all duration-300 hover:bg-black active:translate-y-0"> Lapor </a>
+          <li>
+            <a href="./components/about.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group nav-link">
+              About us
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full underline-bar"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./components/dashboard.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group nav-link">
+              Dashboard
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full underline-bar"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./components/edukasi.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group nav-link">
+              Edukasi
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full underline-bar"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="./components/audit.html" class="relative text-gray-600 font-medium text-sm transition-colors duration-300 hover:text-[var(--dark)] group nav-link">
+              Audit
+              <span class="absolute left-1/2 bottom-[-4px] w-0 h-[3px] bg-[var(--primary)] transition-all duration-300 ease-out transform -translate-x-1/2 group-hover:w-full rounded-full underline-bar"></span>
+            </a>
+          </li>
+
+          <li class="lg:hidden w-full">
+            <a href="./components/laporan.html" class="block w-full">
+              <button class="bg-[var(--dark)] text-white font-bold w-full py-2.5 rounded-md text-sm shadow-lg">Lapor</button>
+            </a>
           </li>
         </ul>
       </nav>
