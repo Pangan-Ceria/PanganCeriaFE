@@ -40,22 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // NavBar active
-  // Ambil nama file halaman saat ini
   let currentPage = window.location.pathname.split("/").pop() || "index.html";
 
-  // Ambil semua link navbar
   const links = document.querySelectorAll(".nav-link");
 
   links.forEach((link) => {
     let target = link.getAttribute("href");
 
-    // Ambil hanya nama file terakhir
     let targetPage = target.split("/").pop();
 
-    // Hilangkan query (?) dan hash (#)
     targetPage = targetPage.split("?")[0].split("#")[0];
 
-    // Jika nama file cocok, beri class active
     if (targetPage === currentPage) {
       link.classList.add("active");
     }
