@@ -23,16 +23,11 @@ body {
 
 /* NavBar aktif */
 .nav-link.active {
-  /* Mengubah warna teks link yang aktif */
   color: var(--primary) !important;
   font-weight: 600;
 }
-
-/* Mengatur garis bawah (underline-bar) untuk link yang aktif */
 .nav-link.active .underline-bar {
-  /* Mengubah lebar garis menjadi 100% */
   width: 100%;
-  /* Mengubah warna latar belakang garis */
   background: var(--primary);
 }
 
